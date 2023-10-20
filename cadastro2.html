@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+
+        /* plano de fundo sessão destaque */
+        .secao-destaque{
+            background: url(img/destaque_pet.jpg) no-repeat center;
+            background-size:cover;
+        
+        }
+        .container-cadastro{
+            width: 800px;
+            height: 30px;
+            
+           
+        }
+  
+
+    </style>
+</head>
+<body>   
+    <div class="secao-destaque text-white text-center text-lg-left bg-dark pb-5">
+        <div class="container-fluid mb-5">
+            <header class="row pt-2">
+                <div class="col-12">
+                    <h1>
+                        <a href="index.html"><img src="img/logo.png"></a>
+                    </h1>
+                    <h1>
+                        Crie sua conta
+                    </h1>
+                </div>    
+            </header>        
+        </div>
+    </div>
+
+      
+
+    <section class="container pt-5 pb-5 mb-5" >
+    
+
+      <div class="row ">
+        <div class="col-12">
+            <form>
+                <div class="form-group">
+                    <label for="perfil">Qual seu prefil?</label>
+                        <select class="form-control" id="perfil">
+                          <option>Autônomo</option>
+                          <option>Estabelecimento</option>
+                          <option>ONG</option>
+                        </select> <br>
+    
+                <div class="form-group">
+                    <label for="descricao">Descrição do serviço/produto</label>
+                    <br>
+                    <input type="text" class="form-control" id="inputNomeEmpresa" placeholder="Informe o nome fantasia do seu serviço"> <br>
+                    <input type="text" class="form-control" id="inputTelefone" placeholder="Informe o telefone para contato"> <br>
+                    <input type="text" class="form-control" id="inputTelefone" placeholder="Informe o website ou rede social"> <br>
+                    <label for="descricao">Quais os serviços oferecidos</label><br>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="servicoPetShop">
+                        <label class="custom-control-label" for="servicoPetShop">PetShop</label><br>
+                      </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="servicoVet">
+                        <label class="custom-control-label" for="servicoVet">Veterinário</label><br>
+                    </div>
+                      <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="servicoAdest">
+                        <label class="custom-control-label" for="servicoAdest">Adestrador</label><br>
+                      </div>
+    
+                      <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="servicoAdote">
+                        <label class="custom-control-label" for="servicoAdote">Adoção</label><br>
+                      </div>
+    
+                      <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="produto">
+                        <label class="custom-control-label" for="produto">Produtos</label><br>
+                      </div>
+    
+                      <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="outros">
+                        <label class="custom-control-label" for="outros">Outros</label><br>
+                      </div>
+                        
+                        
+                    <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição do seu serviço/produto que serão oferecidos"></textarea>
+                  </div>
+                  <div>
+                        <label for="descricao">Localizaão</label><br>
+                        <label for="perfil">Onde voce atende?</label><br>
+    
+                        <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Em local próprio</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Em domicílio</label>
+                              </div>
+                              
+                  </div>
+                  <br>
+              
+                        <label for="inputEndereco">Endereço</label>
+                        <input type="text" class="form-control" id="inputEndereco" placeholder="Nome da Rua, nº da casa.....">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCidade">Cidade</label>
+                          <input type="text" class="form-control" id="inputCidade">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputEstado">Estado</label>
+                            <input type="text" class="form-control" id="inputEstado" placeholder="UF">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputCEP">CEP</label>
+                          <input type="text" class="form-control" id="inputCEP">
+                        </div>
+                      </div>
+        </div>
+       
+      </div>
+       
+      <form>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Inserir fotos</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          </form>
+    
+     
+    
+    
+    </form>
+    <div class="grupo-botoes pt-5 text-center">
+        <a href="cadastro3.html" class="btn btn-warning">Entrar</a>   
+     
+       
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    </div>
+        
+
+        </div> 
+
+
+        
+                                        
+    
+    
+</section>
+
+       
+</body>
+</html>
